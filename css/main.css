@@ -35,3 +35,7 @@ header .header-icons-container .icons {
   align-items: center;
   margin-right: 50px;
 }
+header .icons .fab {
+  font-size: 1.4rem;
+  color: white;
+}
