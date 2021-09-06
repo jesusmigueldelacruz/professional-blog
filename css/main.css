@@ -1,3 +1,13 @@
+:root {
+  --main-color: #ffb400;
+  --second-color: #232323;
+  --main-font: "Roboto", sans-serif;
+  --second-font: "Roboto Mono", monospace;
+  --third-font: "Roboto Slab", serif;
+}
+html {
+  font-size: 62.5%;
+}
 body {
   margin: 0;
   padding: 0;
@@ -7,11 +17,12 @@ body {
   bottom: 0;
   left: 0;
   right: 0;
+  font-family: var(--second-font);
 }
 a {
   text-decoration: none;
   display: inline;
-  color: black;
+  color: var(--second-color);
 }
 header {
   width: 100%;
@@ -23,10 +34,10 @@ header .header-icons-container {
   width: 100%;
   height: 50px;
   display: grid;
-  background-color: #47cfac;
+  background-color: var(--main-color);
 }
 header .header-icons-container .icons {
-  width: 300px;
+  width: 170px;
   height: auto;
   display: flex;
   justify-content: space-between;
@@ -36,6 +47,81 @@ header .header-icons-container .icons {
   margin-right: 50px;
 }
 header .icons .fab {
-  font-size: 1.4rem;
+  font-size: 2rem;
   color: white;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 90px;
+}
+nav .nav-logo-container {
+  margin-left: 50px;
+}
+nav .nav-logo-container img {
+  width: 220px;
+  margin-top: 10px;
+}
+nav .profile-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
+nav .profile-link a {
+  color: var(--second-color);
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+nav .profile-link a:hover {
+  border-bottom: 1px solid var(--second-color);
+}
+.main-background-img {
+  background-image: url(../assets/cover.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.home-main {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  height: 100%; /* para que ocupe todo el espacio restante */
+  background-image: url("../assets/cover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-main section {
+  display: grid;
+  grid-column: 2;
+  justify-items: center;
+  height: 350px;
+  margin-top: 80px;
+}
+.home-main-text {
+  font-family: var(--second-font);
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: #fefefe;
+  text-align: center;
+}
+.home-main-button {
+  width: 110px;
+  height: 50px;
+  background-color: var(--main-color);
+  display: grid;
+  align-items: center;
+  border-radius: 3px;
+  border: none;
+}
+.home-main-button a {
+  font-family: var(--second-font);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--second-color);
 }
