@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: var(--second-font);
+  font-family: var(--main-font);
 }
 .home-body {
   /* para que no haga scroll */
@@ -149,12 +149,24 @@ nav .profile-link a:hover {
 .blogs-news-info-container {
   grid-column: 2;
 }
+.blogs-news-info-container h2 {
+  font-size: 1.6rem;
+}
 .blogs-news-info-container p {
   margin-bottom: 35px;
+  font-size: 1.5rem;
 }
 .blogs-post-container {
   padding: 0 50px 40px;
 }
 .blogs-post-container h3 {
   border-bottom: 1px solid #cdd2da;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.blogs-button {
+  border: 1px solid var(--main-color);
+  padding: 10px 15px;
+  font-size: 1.4rem;
+  color: var(--second-color);
 }
