@@ -1,1 +1,165 @@
-n
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/bb21a94d37.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./assets/favicon.png" type="image/png" />
+    <title>AllPost</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <section class="header-icons-container">
+        <div class="icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </section>
+      <nav>
+        <section class="nav-logo-container">
+          <a href=""
+            ><img src="./assets/allpost-logo.png" alt="logo de AllPost"
+          /></a>
+        </section>
+        <sect ion class="profile-link">
+          <a href="perfil.html" target="_blank">About the author</a>
+        </sect>
+      </nav>
+    </header>
+    <main>
+      <section class="grid-container blogpost-img-container">
+        <img src="/assets/main-news.png" alt="" />
+      </section>
+      <section class="blogpost-main-container">
+        <div class="grid-container">
+          <h3>News</h3>
+          <article>
+            <h1>
+              How Data Brokers Sell Access to the Backbone of the Internet
+            </h1>
+            <p>
+              There's something of an open secret in the cybersecurity world:
+              internet service providers quietly give away detailed information
+              about which computer is communicating with another to private
+              businesses, which then sells access to that data to a range of
+              third parties, according to multiple sources in the threat
+              intelligence industry.
+            </p>
+            <p>
+              The information, known as netflow data, is a useful tool for
+              digital investigators. They can use it to identify servers being
+              used by hackers, or to follow data as it is stolen. But the sale
+              of this information still makes some people nervous because they
+              are concerned about whose hands it may fall into.
+            </p>
+            <p>
+              "I'm concerned that netflow data being offered for commercial
+              purposes is a path to a dark fucking place," one source familiar
+              with the data told Motherboard. Motherboard granted multiple
+              sources anonymity to speak more candidly about industry issues.
+            </p>
+            <p>
+              At a high level, netflow data creates a picture of traffic flow
+              and volume across a network. It can show which server communicated
+              with another, information that may ordinarily only be available to
+              the server owner or the ISP carrying the traffic. Crucially, this
+              data can be used for, among other things, tracking traffic through
+              virtual private networks, which are used to mask where someone is
+              connecting to a server from, and by extension, their approximate
+              physical location.
+            </p>
+            <p>
+              Team Cymru, one threat intelligence firm, works with ISPs to
+              access that netflow data, three sources said. Keith Chu,
+              communications director for the office of Senator Ron Wyden which
+              has been conducting its own investigations into the sale of
+              sensitive data, added that Team Cymru told the office "it obtains
+              netflow data from third parties in exchange for threat
+              intelligence."
+            </p>
+            <p>
+              Companies that may source Team Cymru's data include cybersecurity
+              firms hired to respond to data breaches or proactively hunt out
+              hackers. On its website, Team Cymru says it works with both public
+              and private sector teams to "to help identify, track and stop bad
+              actors both in cyber space and on the ground."
+            </p>
+            <p>
+              "I'm less worried about a bad guy hacker and more worried about a
+              bad guy government or company or politician," one source familiar
+              with the data said. A source in the threat intelligence industry
+              added that they "always thought it was kinda bonkers," referring
+              to Team Cymru's sale of netflow data.
+            </p>
+            <p>
+              The continued sale of sensitive data could present its own privacy
+              and security concerns, and the news highlights that ISPs are
+              providing this data at scale to third parties likely without the
+              informed consent of their own users. Other companies, such as
+              cybersecurity firm Palo Alto Networks, also have access to netflow
+              data.
+            </p>
+            <p>
+              "The users almost certainly don't [know]" their data is being
+              provided to Team Cymru, who then sells access to it, the source
+              familiar with the data said.
+            </p>
+            <p>
+              Team Cymru's customers can probe a dataset, and "effectively run
+              queries against virtually any IP to pull the netflows to and from
+              that IP over a given point in time," one of the sources said. Chu
+              added Team Cymru said it "restricts the amount of data that is
+              returned, so that only a small portion of the netflow data in its
+              database can be accessed by any one client."
+            </p>
+            <p>
+              "Visibility and insight are global," the description adds. An
+              image included in the brochure shows Team Cymru's product letting
+              users trace the activity of servers linked to an Iranian hacking
+              group further than other datasets, such as DNS lookups.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="contact-main-container">
+        <div>
+          <img src="./assets/newsletter.png" alt="" />
+          <div class="contact-left">
+            <a href="#">Contact me</a>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste,
+              deserunt!
+            </p>
+          </div>
+        </div>
+        <div>
+          <img src="./assets/like.png" alt="" />
+          <div class="contact-right">
+            <a href="#">Write me</a>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad
+              adipisci delectus provident illum.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Made from my bedroom <i class="fas fa-bed"></i></p>
+    </footer>
+  </body>
+</html>
